@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Hanken+Grotesk:wght@500&family=Karla&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Outfit:wght@300&family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --card:hsl(300, 43%, 22%);
+    --paragraf: hsl(303, 10%, 53%);
+    --light-pink: hsl(333, 80%, 67%);
+    --box: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: League Spartan;
+    font-size: 15px;
+    background-image: url"('C:\Users\mbibh\OneDrive\Documents\Frontend Mentor Projects\social-proof-section-master\images\image-anne.jpg')";
+    /* background-color: rgb(42, 112, 112); */
+}
+
+main {
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 63rem;
+}
+
+/* This is first section */
+
+.first-block {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-between;
+}
+
+.left-side {
+    flex-basis: 23rem;
+}
+
+.left-side h1 {
+    font-size: 2.8rem;
+    color: var(--card);
+}
+
+.left-side p {
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    line-height: 1.3rem;
+    color: var(--paragraf);
+}
+
+.right-side {
+    flex-basis: 32rem;
+}
+
+.right-side h3{
+    font-size: 1rem;
+    color: var(--card);
+}
+
+[class|=rating] {
+    display: flex;
+    max-width: 26rem;
+    align-items: baseline;
+    background-color: var(--box);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.rating-secnd {
+    margin-left:2.5rem;
+}
+
+.rating-third {
+    margin-left:5rem;
+}
+
+.rate-img {
+    margin:0 1.5rem 0 0.5rem;
+}
+
+.rate-img img {
+    width: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+/* this is second section */
+
+.secnd-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    color: var(--white);
+    margin-top: 2rem;
+}
+
+.card{
+    background-color: var(--card);
+    flex-basis: 20rem;
+    padding: 2rem;
+    height: 14rem;
+    border-radius: 0.5rem;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.image img {
+    width: 2.5rem;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+
+.bio-data h2{
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.bio-data h3{
+    font-size: 1rem;
+    color: var(--light-pink);
+}
+
+.card p{
+    margin-top: 1.7rem;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    font-weight: 500;
+}
+
+.secnd-box {
+    margin-top: 2rem;
+}
+
+.third-box {
+    margin-top: 4rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 961px) {
+    .first-block {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main {
+        height: 100%;
+    }
+
+    .left-side {
+        flex-basis: 100%;
+    }
+
+    .right-side {
+        flex-basis: 100%;
+        align-items: center;
+    }
+
+    [class|=rating] {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    .secnd-block {
+       justify-content: center;
+    }
+
+    .card{
+        margin: 1rem;
+    }
+   
+}
