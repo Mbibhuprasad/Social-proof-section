@@ -17,8 +17,9 @@
 body {
     font-family: League Spartan;
     font-size: 15px;
-    background-image: url"('C:\Users\mbibh\OneDrive\Documents\Frontend Mentor Projects\social-proof-section-master\images\image-anne.jpg')";
-    /* background-color: rgb(42, 112, 112); */
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left , bottom right;
+    background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
 }
 
 main {
@@ -98,7 +99,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* align-items: center; */
     color: var(--white);
     margin-top: 2rem;
 }
@@ -157,6 +157,12 @@ main {
 }
 
 @media screen and (max-width: 961px) {
+    body {
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left , bottom right;
+        background-image: url("images/bg-pattern-top-mobile.svg"), url("images/bg-pattern-bottom-mobile.svg");
+    }
+
     .first-block {
         flex-direction: column;
         text-align: center;
